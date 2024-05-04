@@ -20,7 +20,7 @@ const app = (0, express_1.default)();
 const port = process.env.PORT || 3001;
 // const GEMINI_APIKEY = process.env.GEMINI_APIKEY || "";
 let corsOptions = {
-    origin: ['https://boomza654.github.io/', 'http://localhost:5173'],
+    origin: ['https://boomza654.github.io', 'https://boomza654.github.io/', 'http://localhost:5173'],
     methods: "POST",
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
