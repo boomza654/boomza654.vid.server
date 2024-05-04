@@ -1,0 +1,2 @@
+curl -H "Content-Type: application/json" -X POST -d "{""user"":""bob"",""pass"":""123""}" localhost:3001/summarize
+curl -H "Content-Type: application/json" -X POST -d "{""transcript"":""Hello World I am Boomza654"",""pass"":""123""}" localhost:3001/summarize
