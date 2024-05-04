@@ -47,9 +47,7 @@ function geminiSendRaw(text) {
             };
         }
         try {
-            console.log(response);
             let candidate = response.response.candidates[0];
-            console.log(candidate);
             if (candidate.finishReason === generative_ai_1.FinishReason.MAX_TOKENS)
                 return { status: "error", text: "Transcript too long to be processed" };
             let out = candidate.content.parts[0].text;
